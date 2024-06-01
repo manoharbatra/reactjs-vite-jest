@@ -1,5 +1,5 @@
 // InputTextbox.test.tsx
-import { render, fireEvent, screen, waitFor } from "@testing-library/react";
+import { render, fireEvent, screen } from "@testing-library/react";
 import InputTextbox from "./InputTextbox";
 
 describe("InputTextbox component", () => {
