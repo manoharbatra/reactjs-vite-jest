@@ -1,13 +1,12 @@
 import { useState } from "react";
 import axios from "axios";
-import "./App.css";
 
 type User = {
   id: number;
   name: string;
 }
 
-function App() {
+function FetchUsers() {
   const [users, setUsers] = useState<User[] | undefined>(undefined);
   const getData = () => {
     axios.get('https://jsonplaceholder.typicode.com/users')
@@ -39,4 +38,4 @@ function App() {
   );
 }
 
-export default App;
+export default FetchUsers;
